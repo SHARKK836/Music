@@ -8,7 +8,7 @@ from pyrogram import filters
 from pyrogram.errors import MessageIdInvalid
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 from pytgcalls.__version__ import __version__ as pytgver
-
+from strings.filters import command
 import config
 from config import BANNED_USERS, MUSIC_BOT_NAME
 from strings import get_command
@@ -37,9 +37,8 @@ STATS_COMMAND = get_command("STATS_COMMAND")
 
 
 @app.on_message(
-    filters.command(STATS_COMMAND)
+    command(STATS_COMMAND)
     & filters.group
-    & ~filters.edited
     & ~BANNED_USERS
 )
 @language
@@ -55,9 +54,8 @@ async def stats_global(client, message: Message, _):
 
 
 @app.on_message(
-    filters.command(GSTATS_COMMAND)
+    command(GSTATS_COMMAND)
     & filters.group
-    & ~filters.edited
     & ~BANNED_USERS
 )
 @language
@@ -348,6 +346,10 @@ async def overall_stats(client, CallbackQuery, _):
     storage = call["storageSize"] / 1024
     objects = call["objects"]
     collections = call["collections"]
+    status = db.command("serverStatus")
+    query = status["opcounters"]["query"]
+    mongouptime = status["uptime"] / 86400
+    mongouptime = str(mongouptime)
     served_chats = len(await get_served_chats())
     served_users = len(await get_served_users())
     total_queries = await get_queries()
@@ -380,10 +382,12 @@ async def overall_stats(client, CallbackQuery, _):
 **sᴜᴅᴏᴇʀs:** {sudoers} 
 
       <b><u>ᴍᴏɴɢᴏ ᴅᴀᴛᴀʙᴀsᴇ</b><u/>
+**ᴜᴩᴛɪᴍᴇ:** {mongouptime[:4]} Days
 **sɪᴢᴇ:** {datasize[:6]} Mb
 **sᴛᴏʀᴀɢᴇ:** {storage} Mb
 **ᴄᴏʟʟᴇᴄᴛɪᴏɴs:** {collections}
 **ᴋᴇʏs:** {objects}
+**ǫᴜᴇʀɪᴇs:** `{query}`
 **ʙᴏᴛ ǫᴜᴇʀɪᴇs:** `{total_queries} `
     """
     med = InputMediaPhoto(media=config.STATS_IMG_URL, caption=text)

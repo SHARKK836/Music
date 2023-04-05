@@ -9,17 +9,17 @@ def start_pannel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="اضغط لاضافتي لمجموعتك✅",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ",
+                text="🗒 الاوامر",
                 callback_data="settings_back_helper",
             ),
             InlineKeyboardButton(
-                text="sᴇᴛᴛɪɴɢs", callback_data="settings_helper"
+                text="المساعدة", callback_data="settings_helper"
             ),
         ],
      ]
@@ -30,26 +30,26 @@ def private_panel(_, BOT_USERNAME, OWNER: Union[bool, int] = None):
     buttons = [
         [
             InlineKeyboardButton(
-                text="ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ",
+                text="اضغط لاضافتي لمجموعتك✅",
                 url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
             )
         ],
         [
             InlineKeyboardButton(
-                text="ʜᴇʟᴩ", callback_data="settings_back_helper"
+                text="🗒 الاوامر", callback_data="settings_back_helper"
             )
         ],
         [
             InlineKeyboardButton(
-                text="❣ sᴜᴩᴩᴏʀᴛ ❣", url=config.SUPPORT_GROUP
+                text="✨️ 𝐎𝐌𝐀𝐑 ✨️]ِ", url=f"https://t.me/T_3_A"
             ),
             InlineKeyboardButton(
-                text="🥀 ᴍᴀɪɴᴛᴀɪɴᴇʀ 🥀", user_id=OWNER
+                text="👤 مطور البوت", user_id=OWNER
             )
         ],
         [
             InlineKeyboardButton(
-                text="✨ sᴏᴜʀᴄᴇ ✨", url=config.UPSTREAM_REPO
+                text=" ⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝ ", url=f"https://t.me/L_H_V"
             )
         ],
      ]

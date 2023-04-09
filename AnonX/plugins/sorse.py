@@ -21,7 +21,7 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/cde2b51203fbdab57fac5.jpg",
-        caption=f"""╭═★⊷⌯⧼[⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝](https://t.me/L_H_V)⧽⌯⊶★═╮\n★‹ [⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝𝐀](https://t.me/L_H_V)\n★‹ [𝐎𝐌𝐀𝐑](https://t.me/T_3_A)\n★‹ [𝐻𝐴𝑆𝑆𝐴𝑁](https://t.me/QF_QG)\n★‹ \n╰═★⊷⌯⧼[⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝](https://t.me/L_H_V)⧽⌯⊶★═╯\n ⍟ Welcome to source shark""",
+        caption=f"""╭═★⊷⌯⧼[⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝](https://t.me/L_H_V)⧽⌯⊶★═╮\n★‹ [⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝𝐀](https://t.me/L_H_V)\n★‹ [𝐎𝐌𝐀𝐑](https://t.me/T_3_A)\n★‹  \n╰═★⊷⌯⧼[⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝](https://t.me/L_H_V)⧽⌯⊶★═╯\n ⍟ Welcome to source shark""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [

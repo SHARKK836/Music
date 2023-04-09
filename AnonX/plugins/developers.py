@@ -34,9 +34,6 @@ async def huhh(client: Client, message: Message):
                     InlineKeyboardButton(
                         "᳒𝐎𝐌𝐀𝐑⌯►", url=f"https://t.me/T_3_A"), 
                  ],[
-                    InlineKeyboardButton(
-                        "𝐻𝐴𝑆𝑆𝐴𝑁", url=f"https://t.me/QF_QG"),
-                ],[
                 
                     InlineKeyboardButton(
                         "★⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝⚡", url=f"https://t.me/L_H_V"),
@@ -62,27 +59,6 @@ async def huhh(client: Client, message: Message):
 )
 async def yas(client, message):
     usr = await client.get_chat("T_3_A")
-    name = usr.first_name
-    photo = await app.download_media(usr.photo.big_file_id)
-    await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝━⊶★━⩺\n\n🧞‍♂️ ¦𝙽𝙰𝙼𝙴 :{name}\n🎯 ¦𝚄𝚂𝙴𝚁 :@{usr.username}\n💣 ¦𝙸𝙳 :`{usr.id}`\n🚀 ¦𝙱𝙸𝙾 :{usr.bio}\n\n**⩹━★⊷━⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝━⊶★━⩺**", 
-    reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        name, url=f"https://t.me/{usr.username}")
-                ],
-            ]
-        ),
-    )
-
-
-@app.on_message(
-    command(["حسن ينجم","حسونه","اوفلاين","حسن","offline","hassan"])
-    & filters.group
-    & ~filters.edited
-)
-async def yas(client, message):
-    usr = await client.get_chat("QF_QG")
     name = usr.first_name
     photo = await app.download_media(usr.photo.big_file_id)
     await message.reply_photo(photo,       caption=f"**⩹━★⊷━⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝━⊶★━⩺\n\n🧞‍♂️ ¦𝙽𝙰𝙼𝙴 :{name}\n🎯 ¦𝚄𝚂𝙴𝚁 :@{usr.username}\n💣 ¦𝙸𝙳 :`{usr.id}`\n🚀 ¦𝙱𝙸𝙾 :{usr.bio}\n\n**⩹━★⊷━⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝━⊶★━⩺**", 

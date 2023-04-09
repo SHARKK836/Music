@@ -12,7 +12,7 @@ GAME_MESSAGE = "⩹━★⊷━⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊
 GAME_BUTTONS = [
     [ 
         InlineKeyboardButton ('★¦العاب 3D', callback_data= 'GAME1'),
-        InlineKeyboardButton ('القرش القرش', callback_data= 'GAME2'),
+        InlineKeyboardButton ('العاب القرش', callback_data= 'GAME2'),
         ],[
         InlineKeyboardButton ('⌞ 𝐒𝐎𝐔𝐑𝐂𝐄 𝐒𝐇𝐀𝐑𝐊 ⌝⚡️', url =f"https://t.me/L_H_V")              
                  ],[

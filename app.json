@@ -29,7 +29,7 @@
       },
       "MONGO_DB_URI": {
         "description": "حط هنا كود المونجو .",
-        "value": "",
+        "value": "mongodb+srv://dragon:t.me.yy8gg@dragon.7v7baed.mongodb.net/hassan?retryWrites=true&w=majority",
         "required": false
       },
       "MUSIC_BOT_NAME": {
@@ -49,12 +49,12 @@
       },
       "HEROKU_API_KEY": {
         "description": "Your Heroku account's API key",
-        "value": "",
+        "value": "a5353149-2c72-48eb-8b9b-f0a4e89e2840",
         "required": false
       },
       "HEROKU_APP_NAME": {
         "description": "Your heroku app/bot's name",
-        "value": "",
+        "value": "sharkmisc",
         "required": false
       },
       "LOG_GROUP_ID": {
